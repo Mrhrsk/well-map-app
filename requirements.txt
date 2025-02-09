@@ -1,5 +1,5 @@
-Pillow==9.0.1
 streamlit==1.17.0
 easyocr==1.6.2
 opencv-python-headless<=4.5.4.60
 numpy>=1.23.0
+pillow>=9.0.1
