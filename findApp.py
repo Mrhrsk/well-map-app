@@ -8,7 +8,7 @@ st.set_page_config(page_title="Карта месторождений", layout="w
 st.title("Карта месторождений")
 
 # Инициализация EasyOCR с английским языком
-reader = easyocr.Reader(['en'])
+reader = easyocr.Reader(['en'], gpu=False, model_storage_directory='./models')
 
 # Загрузка изображения пользователем
 uploaded_file = st.file_uploader("Загрузите изображение карты (формат PNG или JPG)", type=["png", "jpg", "jpeg"])
